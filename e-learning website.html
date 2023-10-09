@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>E-Learning Features</h2>
+
+  <!-- Feature 1: Signing up online -->
+  <h3>Feature 1: Signing up online</h3>
+  <form id="signup-form">
+    <input type="text" placeholder="Username" id="username"><br>
+    <input type="email" placeholder="Email" id="email"><br>
+    <input type="password" placeholder="Password" id="password"><br>
+    <button type="button" onclick="signup()">Sign Up</button><br>
+  </form>
+
+  <!-- Feature 2: Facility of uploading documents online -->
+  <h3>Feature 2: Facility of uploading documents online</h3>
+  <input type="file" id="fileInput">
+  <button onclick="uploadDocument()">Upload</button>
+
+  <!-- Feature 3: Responsive Design -->
+  <h3>Feature 3: Responsive Design</h3>
+  <p>This is a simple example of a responsive webpage.</p>
+
+  <!-- Feature 4: Online Assessments -->
+  <h3>Feature 4: Online Assessments</h3>
+  <p>For online assessments, you'd need a more complex system involving forms and server-side processing for scoring.</p>
+</div>
+
+<script>
+  function signup() {
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+  }
+  function uploadDocument() {
+    const fileInput = document.getElementById('fileInput');
+    const selectedFile = fileInput.files[0];
+  }
+</script>
+
+</body>
+</html>
